@@ -2,7 +2,7 @@ import time
 
 import torch
 
-from attn_res.main import AttnResMode, AttnResTransformer, TransformerConfig
+from attn_res import AttnResMode, AttnResTransformer, TransformerConfig
 
 """Run a quick forward pass to verify the model works."""
 

@@ -68,7 +68,7 @@ No additional dependencies are required. The entire model lives in `attn_res/mai
 
 ```python
 import torch
-from attn_res.main import AttnResTransformer, TransformerConfig, AttnResMode
+from attn_res import AttnResTransformer, TransformerConfig, AttnResMode
 
 # Configure the model
 cfg = TransformerConfig(
@@ -96,6 +96,51 @@ loss.backward()
 # Inspect parameter distribution
 print(model.count_parameters())
 # {'embedding': ..., 'layers': ..., 'output': ..., 'attn_res': ..., 'total': ...}
+```
+
+### Using Attention Residuals in a custom Transformer
+
+You can also use the Attention Residuals operator as a drop-in depth-wise routing mechanism inside your own transformer implementation. The only contract is that you maintain a stack of source representations of shape `(N_src, B, T, d_model)` and let `AttnResOperator` produce the input for each sub-layer.
+
+```python
+import torch
+import torch.nn as nn
+
+from attn_res import AttnResOperator, RMSNorm
+
+
+class MyTransformerBlock(nn.Module):
+    def __init__(self, d_model: int):
+        super().__init__()
+        self.attn_res = AttnResOperator(d_model)
+        self.norm = RMSNorm(d_model)
+        self.self_attn = nn.MultiheadAttention(d_model, num_heads=8, batch_first=True)
+
+    def forward(self, sources):
+        """
+        sources: Tensor of shape (N_src, B, T, d_model)
+            e.g. stack of [embedding, block_0, ..., block_{k-1}, partial_block]
+        """
+        # Depth-wise attention over all sources → input h_l
+        h = self.attn_res(sources)          # (B, T, d_model)
+
+        # Plug h into any transformer-style sub-layer
+        h_norm = self.norm(h)
+        attn_out, _ = self.self_attn(h_norm, h_norm, h_norm)
+
+        # Update your own notion of block / layer outputs as usual
+        return attn_out
+
+
+# Example usage inside a custom stack
+B, T, d_model = 2, 64, 512
+embedding = torch.randn(B, T, d_model)
+prev_block = torch.randn(B, T, d_model)
+
+block = MyTransformerBlock(d_model)
+sources = torch.stack([embedding, prev_block], dim=0)  # (N_src=2, B, T, d_model)
+out = block(sources)
+print(out.shape)  # (2, 64, 512)
 ```
 
 Run the included smoke test to verify all three modes against all configurations:
