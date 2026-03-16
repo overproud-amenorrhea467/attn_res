@@ -2,6 +2,8 @@
 
 A clean, single-file PyTorch implementation of **Attention Residuals** (Kimi Team, MoonshotAI, 2026), integrated with Grouped Query Attention (GQA), SwiGLU feed-forward networks, and Rotary Position Embeddings (RoPE).
 
+> **Unofficial implementation.** This project is *not* an official MoonshotAI / Kimi release and is not affiliated with the original authors in any way. It is an independent re-implementation of the paper for research and educational purposes.
+>
 > **Reference:** [Attention Residuals — MoonshotAI](https://github.com/MoonshotAI/Attention-Residuals/blob/master/Attention_Residuals.pdf)
 
 
