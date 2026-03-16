@@ -19,6 +19,12 @@
       <img src="https://img.shields.io/badge/Built%20with-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
     </picture>
   </a>
+  <a href="https://kyegomez.com">
+    <picture>
+      <source srcset="https://img.shields.io/badge/Website-kyegomez.com-000000?style=for-the-badge&logo=aboutdotme&logoColor=white" media="(prefers-color-scheme: dark)">
+      <img src="https://img.shields.io/badge/Website-kyegomez.com-000000?style=for-the-badge&logo=aboutdotme&logoColor=white" alt="Personal Website">
+    </picture>
+  </a>
   <a href="https://github.com/kyegomez/attn_res/stargazers">
     <picture>
       <source srcset="https://img.shields.io/github/stars/kyegomez/attn_res?style=for-the-badge&color=FFD700" media="(prefers-color-scheme: dark)">
