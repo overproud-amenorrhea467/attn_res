@@ -1,10 +1,45 @@
 # attn_res
 
+<p align="left">
+  <a href="https://twitter.com/kyegomezb">
+    <picture>
+      <source srcset="https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" media="(prefers-color-scheme: dark)">
+      <img src="https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+    </picture>
+  </a>
+  <a href="https://discord.gg/EamjgSaEQf">
+    <picture>
+      <source srcset="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white" media="(prefers-color-scheme: dark)">
+      <img src="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+    </picture>
+  </a>
+  <a href="https://pytorch.org/">
+    <picture>
+      <source srcset="https://img.shields.io/badge/Built%20with-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" media="(prefers-color-scheme: dark)">
+      <img src="https://img.shields.io/badge/Built%20with-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+    </picture>
+  </a>
+  <a href="https://github.com/kyegomez/attn_res/stargazers">
+    <picture>
+      <source srcset="https://img.shields.io/github/stars/kyegomez/attn_res?style=for-the-badge&color=FFD700" media="(prefers-color-scheme: dark)">
+      <img src="https://img.shields.io/github/stars/kyegomez/attn_res?style=for-the-badge&color=FFD700" alt="GitHub Stars">
+    </picture>
+  </a>
+  <a href="https://github.com/MoonshotAI/Attention-Residuals/blob/master/Attention_Residuals.pdf">
+    <picture>
+      <source srcset="https://img.shields.io/badge/Based%20on-Attention%20Residuals-4B9CD3?style=for-the-badge&logo=semanticweb&logoColor=white" media="(prefers-color-scheme: dark)">
+      <img src="https://img.shields.io/badge/Based%20on-Attention%20Residuals-4B9CD3?style=for-the-badge&logo=semanticweb&logoColor=white" alt="Attention Residuals">
+    </picture>
+  </a>
+</p>
+
+
 A clean, single-file PyTorch implementation of **Attention Residuals** (Kimi Team, MoonshotAI, 2026), integrated with Grouped Query Attention (GQA), SwiGLU feed-forward networks, and Rotary Position Embeddings (RoPE).
 
 > **Unofficial implementation.** This project is *not* an official MoonshotAI / Kimi release and is not affiliated with the original authors in any way. It is an independent re-implementation of the paper for research and educational purposes.
 >
 > **Reference:** [Attention Residuals — MoonshotAI](https://github.com/MoonshotAI/Attention-Residuals/blob/master/Attention_Residuals.pdf)
+
 
 
 ---
