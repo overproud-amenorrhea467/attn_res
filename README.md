@@ -1,4 +1,4 @@
-# attn_res
+# Implementation of Attention Residuals
 
 <p align="left">
   <a href="https://twitter.com/kyegomezb">
