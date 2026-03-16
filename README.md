@@ -12,9 +12,7 @@ A clean, single-file PyTorch implementation of **Attention Residuals** (Kimi Tea
 Clone the repository and install the single dependency:
 
 ```bash
-git clone https://github.com/kyegomez/attn_res.git
-cd attn_res
-pip install torch
+uv pip install attn_res
 ```
 
 No additional dependencies are required. The entire model lives in `attn_res/main.py`.
